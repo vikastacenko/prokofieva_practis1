@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="./assets/css/materialize.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="./assets/jss/materialize.js"></script>
+</head>
+<body>
+    <section>
+        <div class="container is-fluid">
+            <div class="row">
+                <div class="col s12 m8">
+                    <h2 class="header">User Signup</h2>
+                    <div class="card horisontal">
+                      
+                      <div class="card-stacked">
+                        <div class="card-content">
+                            <form class="col s30">
+                                <div class="row">
+                                  <div class="input-field col s6">
+                                    <input placeholder="Введите имя" id="name" type="text" class="validate">
+                                    <label for="name">Name</label>
+                                  </div>
+                                  <div class="input-field col s6">
+                                    <input placeholder="Введите фамилию" id="surname" type="text" class="validate">
+                                    <label for="surname">Surname</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="input-field col s12">
+                                    <input placeholder="Введите адрес электронной почты" id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                      <input placeholder="Введите пароль" id="password" type="password" class="validate">
+                                      <label for="password">Password</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                      <input placeholder="Подтвердите пароль" id="password2" type="password" class="validate">
+                                      <label for="password2">Confirm Password</label>
+                                    
+                                    </div>
+                                </div> 
+                              </form>
+                        </div>
+                        <div class="card-action">
+                            <b class="waves-effect waves-teal btn">Signup</b>>
+                            <b class="waves-effect waves-teal btn" onclick="fillForm()">fillForm</b>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </section>
+    <script>
+
+      function fillForm(event) {
+         let name = document.getElementById("name");
+         name.click()
+         name.value = "Anton";
+
+         let surname = document.getElementById("surname");
+         surname.click()
+         surname.value = "Antonov";
+
+         let email = document.getElementById("email");
+         email.click()
+         email.value = "Anton@mail.ru";
+
+         let password = document.getElementById("password");
+         password.click()
+         password.value = "*********"
+
+         let password2 = document.getElementById("password2");
+         password2.click()
+         password2.value = "*********"
+
+      }
+
+
+      
+    </script>
+</body>
+</html>
